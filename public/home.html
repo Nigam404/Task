@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Post</title>
+  </head>
+  <body>
+    <h1>Fetch data from API to local DB...</h1>
+    <button type="button" id="fetch_post">
+      Click to fetch data from Post API</button
+    ><br />
+    <button type="button" id="fetch_comment">
+      Click to fetch data from Comment API</button
+    ><br />
+    <button type="button" id="fetch_user">
+      Click to fetch data from User API</button
+    ><br />
+    <hr />
+    <h1>Search Post...</h1>
+    <input type="text" id="search_text" placeholder="type text here..." />
+    <select id="search_type">
+      <option selected>Please select search type...</option>
+      <option value="post">post name/body</option>
+      <option value="comment">comment name/body</option>
+    </select>
+    <button type="button" id="search">Search</button>
+    <hr />
+    <h1>Result...</h1>
+    <h3 id="info"></h3>
+    <div id="result"></div>
+
+    <!-- js -->
+    <script src="./home.js"></script>
+    <!-- axios cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.4/axios.min.js"
+      integrity="sha512-ANd7ZJmixP2T0hxOP4bS6hkci01fxyrQSyRdaY7IsWq1WlKsD0WwWBDVDZbnMR7CJZVKCTkDx/q5D5n2C2C+vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
